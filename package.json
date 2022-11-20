@@ -22,8 +22,13 @@
     "mogoose": "^0.0.1-security",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
     "nodemon": "^2.0.20",
+    "sequelize": "^6.6.2",
     "winston": "^3.8.2"
   },
-  "type": "module"
+
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
 }

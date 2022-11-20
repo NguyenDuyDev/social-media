@@ -2,3 +2,7 @@
 .env
 node_modules
 node_modules/*
+.sequelizerc
+.babelrc
+winston.js
+yarn-error.log

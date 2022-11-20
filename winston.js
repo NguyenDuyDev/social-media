@@ -39,7 +39,7 @@ const appLevel = {
 //             console.log('http msg', msg)// push log qua một hệ thông khác http://localhost:8080
 //             res.end(msg)
 //         })
-// }).listen(8080)
+// }).listen(8999)
 
 const path = require('path');
 module.exports = winston.createLogger({
@@ -65,8 +65,7 @@ module.exports = winston.createLogger({
             filename: path.join(__dirname, 'app.log'),
             maxsize: 5242880,
         }),
-        new winston.transports.Http({host: 'localhost', port: 8080}),
+        new winston.transports.Http({host: 'localhost', port: 8999}),
         // new winston.transports.Stream({ stream })
-    ],
-    exitOnError: false
+    ]
 })
