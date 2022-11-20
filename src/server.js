@@ -25,6 +25,7 @@ app.use(morgan('common'));
 let server = app.listen( process.env.PORT || 3000, () => {
     logger.info(`Server listening on port ${server.address().port}`);
     console.log(`Server listening on port ${server.address().port}`);
+    console.log(`Server listening: http://${server.address().address}${server.address().port}`);
 })
 
 
